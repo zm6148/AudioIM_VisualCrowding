@@ -37,3 +37,12 @@ Experiment 3 is the visual crowding task. Run the script experiment_3_visual_cro
 3)	The script will end when the experiment is finished.
 Data analysis
 Once all 3 experiments are finished, run “analysis_save_to_excel.m”. The summarized results will be stored in the excel file called “summarized_results.xlsx”.
+
+figure 1, experiment 1
+![figure 1](https://lh3.googleusercontent.com/2i3MeFGiYQnU0itd88ZjCBBn0rQod-RtdyXeHnmn4q_iqtXUg0af4Qc2BOH72oqHQw_IxfM93Ick7QW7rFl_qnJRniHEIdGwGlP3OXpGebx_Jq7QcMag1IF9_Xc7B3G9dPQ9HIKX8A=w2400)
+
+figure 2, experiment 2
+![figure 2](https://lh3.googleusercontent.com/I1VINPwywssvoUvcBey4WbRxfwyj47u97Ndv-54pbJmwD8uwpVPn5DLdElbjI7iUR7D9im-18ocj7LzuME8tAO5b4l9n5raKRxiqs8S8nUrQTvgec0pMPCQammaJcFJ4A7yWexr33Q=w2400)
+
+figure 3, correlation results
+![figure 3](https://lh3.googleusercontent.com/VfjkcoQAgcAxPLkpBgZECHwAG89Pgzk1BGGGPX42Os_k-DHVRNhBA77NH_WOZ3eCygHyDtzFkUnv3GRB3eX7A5GFlFAhONMgl41FICkh83qKxYtg0O7E1YT7mNJ1CTJRW6ODewPV4g=w2400)
