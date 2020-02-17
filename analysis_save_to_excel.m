@@ -62,8 +62,9 @@ for index = 1:length(all_subject_name)
     % exp1 results
     % 0.3, 0.5, 1, 1.5
     % notch witdh   threshold
-    exp1_noise_results = exp1_process(exp1_noise_data);
-    exp1_tonal_results = exp1_process(exp1_tonal_data);
+    [exp1_noise_results, tone_detection_threshold] = exp1_process_noise(exp1_noise_data);
+    % too subject wrong reading due
+    exp1_tonal_results = exp1_process_tone(exp1_tonal_data);
     
     % exp2 results
     % exp2 results: noise, speeach, release
@@ -74,9 +75,9 @@ for index = 1:length(all_subject_name)
     % each has Threshold log, Threshold log sd, Threshold in degree
     exp3_results = exp3_process(exp3_data);
     
-    data_matrix_dummy = [exp1_noise_results(:,2)', exp1_tonal_results(:,2)', exp1_tonal_results(3,2)-exp1_noise_results(3,2), ...
-                          exp2_results', ...
-                          exp3_results(:,3)', mean(exp3_results(:,3))];
+    data_matrix_dummy = [exp1_noise_results(:,2)', exp1_tonal_results(:,2)', exp1_tonal_results(3,2)-exp1_noise_results(3,2), tone_detection_threshold...
+                         exp2_results', ...
+                         exp3_results(:,3)', mean(exp3_results(:,3))];
                       
     data_matrix = [data_matrix; data_matrix_dummy];
 end
